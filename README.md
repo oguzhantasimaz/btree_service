@@ -3,6 +3,10 @@ This is a simple web service built using the Echo framework in Go. It accepts a 
 
 For simplicity and readability only models are divided into separate files. The server logic is in main.go.
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/oguzhantasimaz/btree_service)](https://goreportcard.com/report/github.com/oguzhantasimaz/btree_service)
+
+[First Release](https://github.com/oguzhantasimaz/btree_service/releases/tag/v0.0.1)
+
 ## Features
 - Single endpoint to calculate the maximum path sum of a binary tree.
 - Request and response in JSON format.
