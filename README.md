@@ -1,7 +1,7 @@
 # Max Path Sum Service
 This is a simple web service built using the Echo framework in Go. It accepts a binary tree in JSON format and returns the maximum path sum. A path sum is the sum of node values along any path in the binary tree.
 
-For simplicity and readability only models are divided into separate files. The server logic is in main.go.
+**For simplicity and readability** only models are divided into separate files. The server logic is in main.go.
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/oguzhantasimaz/btree_service)](https://goreportcard.com/report/github.com/oguzhantasimaz/btree_service)
 
