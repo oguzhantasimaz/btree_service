@@ -64,6 +64,7 @@ func main() {
 
 // Calculation Functions
 
+// Returns nodes as map with node ID as key
 func buildNodesMap(nodes []domain.Node) map[string]*domain.Node {
 	nodeMap := make(map[string]*domain.Node)
 	for _, node := range nodes {
@@ -73,6 +74,10 @@ func buildNodesMap(nodes []domain.Node) map[string]*domain.Node {
 	return nodeMap
 }
 
+// Calculates the maximum path sum with the logic:
+// 1. Calculate the maximum path sum for the left and right subtrees recursively
+// 2. Update the maximum path sum with the current node value
+// 3. Return the maximum path sum for the current node
 func calculateMaxPathSum(nodes map[string]*domain.Node, node *domain.Node, maxSum *int) int {
 	if node == nil {
 		return 0
@@ -97,6 +102,7 @@ func calculateMaxPathSum(nodes map[string]*domain.Node, node *domain.Node, maxSu
 	return node.Value + max(leftMax, rightMax)
 }
 
+// Return max int
 func max(a, b int) int {
 	if a > b {
 		return a
