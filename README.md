@@ -34,6 +34,20 @@ go run main.go
 ```
 This will start the server on http://localhost:3000.
 
+### Docker
+
+To run the server in a Docker container, build the image:
+
+```bash
+docker build -t btree_service .
+```
+
+Then run the container:
+
+```bash
+docker run -p 3000:3000 btree_service
+```
+
 ### API Endpoints
 POST /max-path-sum
 Accepts a binary tree in JSON format and returns the maximum path sum.
